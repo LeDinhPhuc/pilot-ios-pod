@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |spec|
-
+  
   spec.name         = "PilotFramework"
   spec.version      = "1.0.0"
   spec.summary      = "Pilot SDK is MultiCDN for Swift project"
@@ -17,8 +17,8 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/LeDinhPhuc/pilot-ios-pod"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author             = { "Sao Nguyen" => "piltekvn@gmail.com" }
-  spec.source       = { :git => "https://github.com/LeDinhPhuc/pilot-ios-pod.git", :tag => "#{spec.version}" }
+  spec.author       = { "Sao Nguyen" => "piltekvn@gmail.com" }
+  spec.source       = { :git => "https://github.com/LeDinhPhuc/pilot-ios-pod.git", :tag => spec.version.to_s }
   spec.vendored_frameworks = "xcframeworks/PilotCDN.xcframework"
   spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.0'
