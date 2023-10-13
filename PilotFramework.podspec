@@ -21,6 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = "PilotCDN.xcframework"
   spec.pod_target_xcconfig = { "BUILD_LIBRARY_FOR_DISTRIBUTION" => "YES" }
+  spec.user_target_xcconfig = { "BUILD_LIBRARY_FOR_DISTRIBUTION" => "YES" }
   
   spec.ios.deployment_target = "11.0"
   spec.swift_version = "5.3"
