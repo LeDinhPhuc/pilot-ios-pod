@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Sao Nguyen" => "piltekvn@gmail.com" }
   spec.source       = { :git => "https://github.com/LeDinhPhuc/pilot-ios-pod.git", :tag => spec.version.to_s }
 
-  spec.vendored_frameworks = "xcframeworks/PilotCDN.xcframework"
+  spec.vendored_frameworks = "PilotCDN.xcframework"
   spec.preserve_paths               = "*"
   spec.requires_arc                 = true
   spec.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreGraphics','CoreMotion','coreTelephony','coreText','QuartzCore','WebKit'
