@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint PilotFramework.podspec' to ensure this is a
+# Be sure to run `pod lib lint PilotFramework.podspec" to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -20,12 +20,8 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/LeDinhPhuc/pilot-ios-pod.git", :tag => spec.version.to_s }
 
   spec.vendored_frameworks = "PilotCDN.xcframework"
-  spec.preserve_paths               = "*"
-  spec.requires_arc                 = true
-  spec.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreGraphics','CoreMotion','coreTelephony','coreText','QuartzCore','WebKit'
-  spec.libraries = 'c++','z'
-
-
-  spec.ios.deployment_target = '11.0'
-  spec.swift_version = '5.3'
+  spec.pod_target_xcconfig = { "BUILD_LIBRARY_FOR_DISTRIBUTION" => "YES" }
+  
+  spec.ios.deployment_target = "11.0"
+  spec.swift_version = "5.3"
 end
