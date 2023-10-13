@@ -22,7 +22,10 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "xcframeworks/PilotCDN.xcframework"
   spec.preserve_paths               = "*"
   spec.requires_arc                 = true
+  spec.frameworks = 'UIKit','Foundation','SystemConfiguration','CoreGraphics','CoreMotion','coreTelephony','coreText','QuartzCore','WebKit'
+  spec.libraries = 'c++','z'
 
-  spec.ios.deployment_target = '9.0'
+
+  spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.3'
 end
