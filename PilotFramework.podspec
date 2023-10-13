@@ -10,7 +10,9 @@ Pod::Spec.new do |spec|
   spec.name         = "PilotFramework"
   spec.version      = "1.0.0"
   spec.summary      = "Pilot SDK is MultiCDN for Swift project"
-  spec.description  = <<-DESC(-_-)DESC
+  spec.description  = <<-DESC
+                          (-_-)
+                          DESC
 
   spec.homepage     = "https://github.com/LeDinhPhuc/pilot-ios-pod"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
